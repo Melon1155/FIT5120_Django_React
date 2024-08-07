@@ -1,0 +1,44 @@
+.map-container {
+    position: relative;
+    height: 93vh;
+    padding: 30px;
+}
+
+.map {
+    position: relative;
+    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.instructions {
+    position: absolute;
+    top: 14%;
+    left: 82.5%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    padding: 20px;
+    background-color: rgb(249, 250, 251);
+    overflow-y: clip;
+    font-family: sans-serif;
+    height: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.close-button {
+    position: absolute;
+    font-style: oblique;
+    top: 20px;
+    right: 30px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #7FA1C3;
+    z-index: 100;
+}
