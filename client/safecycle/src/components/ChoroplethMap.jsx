@@ -4,7 +4,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import './Map.css'
 import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoicHJlZXRoaWRvbnRodSIsImEiOiJjbHU3cHh1bWMwOGFyMmxwbnRpaGEwbW1hIn0.s9nQ_ZEtcYhaY9SRDS-0Jw';
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN_CHOROPLETH;
 
 const ChoroplethMap = () => {
     const mapContainer = useRef(null);

@@ -7,11 +7,11 @@ import '@mapbox/mapbox-gl-directions/dist/mapbox-gl-directions.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWVsb24xMTU1IiwiYSI6ImNsejlhM2tkcjAxbG4ya3B0eTc1eHRvNG8ifQ.kpENBsizEwkPe4TqVHDkdA';
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN_ROUTING;
 
 const Map = () => {
     
-    const [accidents, setAccidents] = useState([]);
+    /* const [accidents, setAccidents] = useState([]);
     
     useEffect(() => {
         fetchAccidents();
@@ -33,7 +33,7 @@ const Map = () => {
         if (!map.current.getSource('accidents')) {
             map.current.addSource('accidents', {
                 type: 'geojson',
-                data: data // Ensure this is GeoJSON format
+                data: data
             });
 
             map.current.addLayer({
@@ -50,6 +50,7 @@ const Map = () => {
         }
     };
 
+    */
 
     const [isVisible, setIsVisible] = useState(false);
     const [routeDirections, setRouteDirections] = useState([]);
@@ -68,7 +69,7 @@ const Map = () => {
     const [zoom, setZoom] = useState(12);
 
     useEffect(() => {
-        if (map.current) return; // Initialize map only once
+        if (map.current) return;
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
             style: 'mapbox://styles/mapbox/streets-v12',
