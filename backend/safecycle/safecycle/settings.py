@@ -80,9 +80,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'safecycle.wsgi.application'
 
-GDAL_LIBRARY_PATH = os.getenv('GDAL_LIBRARY_PATH', 'D:/GDAL/bin/gdal309.dll')
-GEOS_LIBRARY_PATH = os.getenv('GEOS_LIBRARY_PATH', 'D:/GDAL/bin/geos_c.dll')
-
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
