@@ -17,14 +17,14 @@
 .instructions {
     position: absolute;
     top: 14%;
-    left: 82.5%;
+    left: 89%;
     transform: translate(-50%, -50%);
-    width: 30%;
+    width: 18%;
     padding: 20px;
     background-color: rgb(249, 250, 251);
     overflow-y: clip;
     font-family: sans-serif;
-    height: 20%;
+    height: 22%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     z-index: 2;
@@ -38,7 +38,37 @@
     background: transparent;
     border: none;
     font-size: 20px;
-    cursor: pointer;
+    cursor: pointer; 
     color: #7FA1C3;
     z-index: 100;
+}
+
+.legend {
+    position: absolute;
+    bottom: 5%;
+    left: 2%;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.legend h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
 }
