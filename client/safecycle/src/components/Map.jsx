@@ -89,6 +89,10 @@ const Map = () => {
         });
 
         map.current.addControl(directions, 'top-left');
+        const nav = new mapboxgl.NavigationControl({
+            visualizePitch: true
+        });
+        map.current.addControl(nav, 'bottom-right')
 
         directions.on('route', (e) => {
             setIsVisible(true);
