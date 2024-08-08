@@ -33,7 +33,7 @@ const Map = () => {
     };
 
     useEffect(() => {
-        fetch('https://20.28.44.153/api/accidents/?format=json')
+        fetch('https://backend.ta24.me/api/safecycle/?format=json')
             .then(response => response.json())
             .then(data => {
                 setAccidentsData(data);

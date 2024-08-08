@@ -17,6 +17,11 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
@@ -26,7 +31,7 @@ SECRET_KEY = 'django-insecure-lhr0f1m1@nh5&5jn@6dyhp+rlw0_u96(67jp+u@%6qji6c1m3k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['20.28.44.153']
+ALLOWED_HOSTS = ['ta24.me', 'www.ta24.me', 'backend.ta24.me']
 
 
 # Application definition
