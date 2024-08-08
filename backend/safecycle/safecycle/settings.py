@@ -13,6 +13,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 import os
 from pathlib import Path
 
+# Security Headers
+SECURE_BROWSER_XSS_FILTER = True  #Enables X-XSS-Protection header; enables browsers filtering and blocking of XSS
+X_FRAME_OPTIONS = 'DENY'  # Enables X-Frame-Options header; prevents against clickjacking attacks and prevents site from being embedded into iframes
+SECURE_CONTENT_TYPE_NOSNIFF = True  
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
