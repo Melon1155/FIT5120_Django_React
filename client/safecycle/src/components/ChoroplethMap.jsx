@@ -17,7 +17,7 @@ const ChoroplethMap = () => {
         if (map.current) return;
         map.current = new mapboxgl.Map({
             container: mapContainer.current,
-            style: 'mapbox://styles/preethidonthu/clzhabtb800l901r1898yax6k',
+            style: 'mapbox://styles/melon1155/clz9e946c005q01r2a0ovhrhj',
             center: [lng, lat],
             zoom: zoom
         });

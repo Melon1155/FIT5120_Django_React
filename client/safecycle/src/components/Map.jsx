@@ -33,7 +33,7 @@ const Map = () => {
     };
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/accidents/?format=json')
+        fetch('/api/accidents/?format=json')
             .then(response => response.json())
             .then(data => {
                 setAccidentsData(data);
