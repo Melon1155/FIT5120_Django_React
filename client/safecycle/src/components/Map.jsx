@@ -33,7 +33,7 @@ const Map = () => {
     };
 
     useEffect(() => {
-        fetch('https://backend.ta24.me/api/safecycle/?format=json')
+        fetch('https://backend.ta24.me/api/accidents/?format=json')
             .then(response => response.json())
             .then(data => {
                 setAccidentsData(data);
